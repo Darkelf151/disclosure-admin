@@ -1,0 +1,42 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+.inputlabel {
+    color: #888;
+    font-size: 0.8em;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="date"]{
+    font-size: 0.9em;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px 0 10px 10px;
+    border-radius: 4px;
+    font-family: "ff-cocon-pro","sans-serif";
+    font-weight: 100;
+}
+textarea:hover,
+input[type="text"]:hover,
+input[type="email"]:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+textarea:focus,
+input:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 1px 1px rgba(59, 153, 252, .7);
+}

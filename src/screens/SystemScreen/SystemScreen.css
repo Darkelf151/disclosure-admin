@@ -1,0 +1,60 @@
+.system__container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.system__addAdmin {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid var(--accent);
+    padding: 10px;
+}
+.system__addButtonContainer {
+    text-align: right;
+}
+.system__adminContainer {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    border: 1px solid var(--accent);
+    padding: 10px;
+}
+
+.admin_wrapper {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+.admin_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.system__adminName {
+    padding: 10px 0 0 20px;
+
+    width: 35%;
+}
+.system__adminEmail {
+    padding: 10px 0;
+    width: 65%;
+}
+.system__adminButtons {
+    padding: 0 20px 0 0;
+    width: 15%;
+}
+
+
+@media screen and (min-width: 960px) {
+    .system__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .system__addAdmin {
+        max-height: 350px
+    }
+
+}

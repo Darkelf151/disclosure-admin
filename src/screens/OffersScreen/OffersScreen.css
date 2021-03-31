@@ -1,0 +1,113 @@
+.offers_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.business_container {
+    border: 1px double #ddd;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.business_container_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.business_wrapper {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid var(--accent);
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.business_name {
+    color: #555;
+    font-size: 0.9rem;
+}
+.business_title {
+    color: #888;
+    font-size: 0.7rem;
+}
+.business_filter_buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+.contacts__searchContainer {
+    margin-bottom: 5px;
+}
+
+.contacts__searchContainerInner {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__searchInput {
+    width: 100%
+}
+.contactsAdvanceBtnsContainer {
+    display: flex;
+    justify-content: center;
+}
+.contacts__btns {
+    min-width: 50px;
+    text-align: center;
+    margin: 20px 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 12px
+}
+.contacts__btns:hover {
+    background-color: #1888ff;
+    color: white;
+}
+.contact__filterButtons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+}
+
+.filterButton {
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #ccc;
+}
+
+.filterButton:hover {
+    border-color: #333;
+
+}
+
+.selected {
+    background-color: #1888ff;
+    color: white
+}
+.order_filter {
+    font-size: 0.8rem;
+    color: #888
+}
+
+
+
+@media screen and (min-width: 960px){
+    .contacts__controls {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contacts__searchContainer {
+        width: 40%;
+        padding-top: 20px;
+    }
+    .filterButton {
+        margin: 0 5px;
+    }
+
+}
