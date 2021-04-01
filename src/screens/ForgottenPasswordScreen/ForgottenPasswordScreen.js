@@ -35,7 +35,6 @@ const formReducer = (state, action) => {
 const ForgottenPasswordScreen = () => {
 
     const [, setIsLoading] = useState(false);
-
     const [error, setError] = useState('');
     const dispatch = useDispatch();
     const history = useHistory();
@@ -80,7 +79,6 @@ const ForgottenPasswordScreen = () => {
     };
     const inputChangeHandler = useCallback(
         (inputIdentifier, inputValue, inputValidity) => {
-            console.log({inputIdentifier}, {inputValue}, {inputValidity});
             dispatchFormState({
                 type: FORM_INPUT_UPDATE,
                 value: inputValue,

@@ -19,7 +19,7 @@ export const getAdmins = (token) => {
 
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/admins`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/admins`,
             {
                 method: 'GET',
                 headers: {
@@ -59,7 +59,7 @@ export const createNewAdmin = (id, name, email, password, token)=> {
 
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/createadmin/${id ? id : ''}`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/createadmin/${id ? id : ''}`,
             {
                 method: 'POST',
                 headers: {
@@ -103,7 +103,7 @@ export const createNewAdmin = (id, name, email, password, token)=> {
 export const deleteAdmin = (id, token) => {
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/deleteadmin/${id}`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/deleteadmin/${id}`,
             {
                 method: 'GET',
                 headers: {

@@ -21,7 +21,7 @@ export const authenticate = (userId, token, email, userName, company, role) => {
 export const login = (email, password) => {
 
     return async dispatch => {
-        const response = await fetch('http://18.135.69.3/api/v1/admin/login/'
+        const response = await fetch('https://app.disclosurediscounts.co.uk/api/v1/admin/login/'
             ,{
                 method: 'POST',
                 headers: {
@@ -63,7 +63,7 @@ console.log(errorResData.error);
 }
 export const checkToken = (token) => {
     return async dispatch => {
-        const response = await fetch('http://18.135.69.3/api/v1/admin/checktoken/'
+        const response = await fetch('https://app.disclosurediscounts.co.uk/api/v1/admin/checktoken/'
             ,{
                 method: 'POST',
                 headers: {
@@ -100,7 +100,7 @@ export const checkToken = (token) => {
 
 export const forgottenPassword = (email) => {
     return async dispatch => {
-        const response = await fetch('http://18.135.69.3/api/v1/admin/forgotten/'
+        const response = await fetch('https://app.disclosurediscounts.co.uk/api/v1/admin/forgotten/'
             , {
                 method: 'POST',
                 headers: {

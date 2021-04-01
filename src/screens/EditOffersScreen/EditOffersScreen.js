@@ -225,7 +225,7 @@ const EditOffersScreen = (props) => {
     const imageUploadHandler = async (file, setState) => {
         const formData = new FormData();
         formData.append("fileUpload", file[0]);
-            const response = await fetch("http://18.135.69.3/api/multiimageupload.php", {
+            const response = await fetch("https://app.disclosurediscounts.co.uk/api/multiimageupload.php", {
                 method: "POST",
                 headers: {
                     'Accept': '*/*',

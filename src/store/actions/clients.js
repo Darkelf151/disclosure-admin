@@ -11,7 +11,7 @@ export const getClients = (token) => {
 
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/clients`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/clients`,
             {
                 method: 'GET',
                 headers: {

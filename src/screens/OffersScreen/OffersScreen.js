@@ -81,7 +81,6 @@ const OffersScreen = (props) => {
 
     const inputChangeHandler = useCallback(
         (inputIdentifier, inputValue) => {
-            console.log({inputIdentifier}, {inputValue});
             dispatchFormState({
                 type: FORM_INPUT_UPDATE,
                 value: inputValue,

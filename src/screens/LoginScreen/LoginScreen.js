@@ -35,7 +35,6 @@ const formReducer = (state, action) => {
 const LoginScreen = () => {
 
     const [, setIsLoading] = useState(false);
-
     const [error, setError] = useState('');
 
     const dispatch = useDispatch();

@@ -34,7 +34,7 @@ export const getBusinesses = (inputValue, pageCount, filterType, token) => {
     return async (dispatch) => {
 
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/getbusinesses/`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/getbusinesses/`,
             {
                 method: 'POST',
                 headers: {
@@ -87,7 +87,7 @@ export const getBusinessById = (id, token) => {
     return async (dispatch) => {
 
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/getbusiness/${id}`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/getbusiness/${id}`,
             {
                 method: 'GET',
                 headers: {
@@ -146,7 +146,7 @@ export const updateBusiness = (id, name, address, town, postcode, phone, start, 
    return async (dispatch) => {
 
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/updatebusiness/${id ? id : ''}`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/updatebusiness/${id ? id : ''}`,
             {
                 method: 'POST',
                 headers: {
@@ -202,7 +202,7 @@ export const deleteBusiness = (id, token) => {
 
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/deletebusiness/${id}`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/deletebusiness/${id}`,
             {
                 method: 'GET',
                 headers: {
@@ -241,7 +241,7 @@ export const getCategories = (token) => {
 
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/categories`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/categories`,
             {
                 method: 'GET',
                 headers: {
@@ -280,7 +280,7 @@ export const deleteCategory = (id, token) => {
     console.log("deleteCategory",{token})
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/category/${id}`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/category/${id}`,
             {
                 method: 'GET',
                 headers: {
@@ -319,7 +319,7 @@ export const createCategory = (name, token) => {
     console.log("createCategory",{token})
     return async (dispatch) => {
         const response = await fetch(
-            `http://18.135.69.3/api/v1/admin/category/`,
+            `https://app.disclosurediscounts.co.uk/api/v1/admin/category/`,
             {
                 method: 'POST',
                 headers: {

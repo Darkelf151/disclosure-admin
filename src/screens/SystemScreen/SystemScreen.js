@@ -105,7 +105,6 @@ const SystemScreen = () => {
             try {
                 await dispatch(action).then(() => {
                     setIsLoading(false);
-                    console.log("submitted");
                     clearFormHandler();
                 });
             } catch (err) {

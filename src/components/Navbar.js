@@ -5,6 +5,7 @@ import {  Link } from "react-router-dom";
 import './Navbar.css';
 import { IconContext } from "react-icons/lib";
 import {logout} from "../store/actions/auth";
+import { useHistory } from "react-router-dom";
 
 
 
@@ -12,6 +13,8 @@ const Navbar = (props) => {
     const { isAuthUser } = props;
     const [click, setClick] = useState(false);
     const [, setReRender] = useState('');
+
+    const history = useHistory();
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => {
@@ -26,6 +29,7 @@ const Navbar = (props) => {
 
         window.clearTimeout(timeoutId)
         dispatch(logout());
+        history.push("/login");
     }
 
     const resetTimer = () => {
